@@ -4,8 +4,8 @@ import TodosList from './todosList'
 function Header() {
     const [inputValue,setInputValue]=useState("");
     const [todos,setTodos]=useState([])
-    const [filtered ,setFiltred]=useState(todos)
-console.log();
+    const [filtered ,setFiltered]=useState(todos)
+
     const addTodos =(e)=>{
         e.preventDefault()
 
@@ -16,19 +16,19 @@ console.log();
     }
 
     setTodos([...todos , newTodos])
-
-    setInputValue("") 
+    setInputValue("")
+    
     }
   return (
     <div className='header'>
       <h1>todosss</h1>
      <form onSubmit={(e)=>{addTodos(e)}}>
-     <input className='new-todo' placeholder="ne yapılmasını istersin" values={inputValue} onChange={(e)=>{
+     <input className='new-todo' placeholder="ne yapılmasını istersin" value={inputValue} onChange={(e)=>{
         setInputValue(e.target.value)
      }}/>
      </form>
       <TodosList todos={todos} setTodos={setTodos} filtered={filtered}/>
-      <Footer todos={todos} setTodos={setTodos} filtered={filtered} setFiltered={setFiltred}/>
+      <Footer todos={todos} setTodos={setTodos} filtered={filtered} setFiltered={setFiltered}/>
       
     </div>
   )

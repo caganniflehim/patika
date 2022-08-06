@@ -1,6 +1,6 @@
-import React, { useState,useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 
-function Footer({todos,setTodos,filtered,setFiltered}) {
+function Footer({todos,setTodos,setFiltered}) {
 
     const[completed,setCompleted]=useState()
 
@@ -9,7 +9,9 @@ function Footer({todos,setTodos,filtered,setFiltered}) {
         setFiltered(todos)
        
 },[todos])
+
 const deleteCompleted=()=>{
+
     setTodos(todos.filter((item)=>item.completed===false))
 }
 
@@ -38,12 +40,14 @@ const deleteCompleted=()=>{
                     )))
                 }}> Completed</a>
             </li>
+            
+            </ul>
             <button className="clear-completed" onClick={() => {
             deleteCompleted()
         }}>
             Clear completed
         </button>
-      </ul>
+      
     </div>
   )
 }

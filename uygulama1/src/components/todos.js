@@ -1,7 +1,9 @@
 import React from 'react'
 
 function Todos({todo,todos,setTodos}) {
+
     const deleteTodos=(ID)=>{
+
         setTodos(todos.filter((item)=> item.id !==ID))
     }
 
