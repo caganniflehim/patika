@@ -28,7 +28,7 @@ import React,{useState,useEffect} from 'react'
     };
   return (
     <form onSubmit={onSubmit}>{/*form kulandımız için sayfa yenilenme oluyor bununiçin onsubmit içindeki paranteze e.preventDefault yazarsak sayfa yenilenmesini kesiyo */}
-        <div>
+        <div className="input1">
       <input name="fullname" placeholder="fullname" value={form.fullname} onChange={onChangeInput}/>{/*placeholder:yer tutucu bilinmeyen bir veri yerine koan kelime yani extboxın içine yazar */}
       </div>
       <div>
