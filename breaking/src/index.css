@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html { 
+  background: url("https://p4.wallpaperbetter.com/wallpaper/645/409/281/dark-green-gradation-blur-wallpaper-preview.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.baslikalt{
+    margin: 0px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.baslikdiv{
+  
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.ilkparag{
+  font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+}
+.character_map {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cLPBVN {
+  margin: 3%;
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.jaGwnY {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 25px;
+  width: 50px;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.fgPKig {
+  height: 0.5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 25%;
+  background-color: rgb(255, 255, 255);
+  margin: 2px 0px;
+  width: 30px;
+}
+
+.gCILqu {
+  height: 0.5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 25%;
+  background-color: rgb(255, 255, 255);
+  margin: 2px 0px;
+  width: 40px;
+}
+
+.lfMqRr {
+  height: 0.5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 25%;
+  background-color: rgb(255, 255, 255);
+  margin: 2px 0px;
+  width: 22px;
+}
+
+.char_img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  opacity: .8;
+}
+
+.char_btm {
+  background: #fff;
+  margin-left: -20px;
+  position: relative;
+  height: 120px;
+  transition: 1s;
+}
+
+.btm2 {
+  margin-top: -200px;
+  height: 320px;
+  transition: 1s;
+  opacity: .9;
+  overflow: hidden;
+  position: relative;
+}
+
+.char_btm p {
+  font-size: .9em;
+}
+.btPmOt {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.underline {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.bee_logo {
+  width: 30px!important;
+  height: 30px!important;
+}
+
+
+
+.char_btm:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #acacac;
+  border-top: 0;
+  border-right: 0;
+  margin-top: -20px;
+  overflow: visible;
+}
+
+.char_btm div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.hidden_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hidden_info>div {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.hidden_info>div>p:first-of-type {
+  font-weight: 700;
+}
+
+.occ_map {
+  font-size: .8em;
+  margin: 0 0 0 5px;
+}
+.dLESzS {
+  text-align: center;
+}
